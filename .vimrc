@@ -1,4 +1,5 @@
 syntax on;
+set nopaste
 set shell=/bin/sh
 set encoding=utf-8
 set number
@@ -56,6 +57,9 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'Raimondi/delimitMate'
+
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'SirVer/ultisnips'
 
 " Required:
 call neobundle#end()
