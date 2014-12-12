@@ -43,8 +43,6 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
@@ -54,16 +52,10 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'terryma/vim-smooth-scroll'
 NeoBundle 'tacahiroy/ctrlp-funky'
-NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'heavenshell/vim-jsdoc'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'szw/vim-ctrlspace'
-
+NeoBundle 'Raimondi/delimitMate'
 
 " Required:
 call neobundle#end()
