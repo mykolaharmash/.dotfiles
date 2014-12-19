@@ -58,6 +58,7 @@ NeoBundle 'mhinz/vim-signify'
 NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'scrooloose/syntastic'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
