@@ -9,10 +9,13 @@ set shiftwidth=4
 set expandtab
 set nowrap
 set cursorline
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 set autoindent
 set smartindent
+
+" autoread files when they changed on disk
+set autoread
 
 set hlsearch
 set gdefault
