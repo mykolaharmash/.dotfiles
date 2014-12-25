@@ -62,6 +62,7 @@ NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
@@ -87,6 +88,11 @@ map <Leader>n :NERDTreeToggle<CR>
 map <C-p> :CtrlP<CR>
 nnoremap <Leader>fu :CtrlPFunky<CR>
 colorscheme Tomorrow-Night-Bright
+
+set background=dark
+
+let g:indent_guides_guide_size = 1
+" let g:indent_guides_enable_on_vim_startup = 1
 
 highlight ExtraWhitespace ctermbg=red
 highlight clear SignColumn
