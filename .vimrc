@@ -63,6 +63,7 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'wavded/vim-stylus'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
