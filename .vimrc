@@ -64,6 +64,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'wavded/vim-stylus'
+NeoBundle 'elzr/vim-json'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'

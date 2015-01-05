@@ -1,6 +1,8 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
+set NVM_PATH $HOME/.nvm
+
 # Theme
 set fish_theme clearance
 set fish_plugins git vi-mode
