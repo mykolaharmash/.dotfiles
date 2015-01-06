@@ -82,7 +82,8 @@ NeoBundleCheck
 
 let mapleader = ","
 let g:ctrlp_extensions = ['funky']
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
+let g:vim_json_syntax_conceal = 0
 
 nmap <space> za
 
