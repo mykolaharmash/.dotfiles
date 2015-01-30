@@ -94,6 +94,10 @@ colorscheme Tomorrow-Night-Bright
 
 set background=dark
 
+set wildignore+=*/.git/**
+set wildignore+=*/node_modules/**
+set wildignore+=*/bower_components/**
+
 let g:indent_guides_guide_size = 1
 " let g:indent_guides_enable_on_vim_startup = 1
 
