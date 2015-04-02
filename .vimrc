@@ -66,6 +66,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'mxw/vim-jsx'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
@@ -117,3 +118,4 @@ let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 set diffopt+=vertical
+let g:jsx_ext_required = 0
