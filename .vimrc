@@ -1,4 +1,4 @@
-syntax on;
+syntax on
 set nopaste
 set shell=/bin/sh
 set encoding=utf-8
@@ -64,7 +64,9 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'wavded/vim-stylus'
+NeoBundle 'groenewege/vim-less'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'majutsushi/tagbar'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
@@ -94,7 +96,7 @@ colorscheme Tomorrow-Night-Bright
 
 set background=dark
 
-set wildignore+=*/.git/**
+" set wildignore+=*/.git/**
 set wildignore+=*/node_modules/**
 set wildignore+=*/bower_components/**
 
@@ -114,3 +116,5 @@ nnoremap <CR> :nohlsearch<CR><CR>
 " for more - http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes)
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+set diffopt+=vertical
