@@ -66,7 +66,6 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'elzr/vim-json'
-NeoBundle 'majutsushi/tagbar'
 
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
