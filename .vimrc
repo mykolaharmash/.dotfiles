@@ -71,6 +71,8 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
 
+NeoBundle 'vim-scripts/nginx.vim'
+
 " Required:
 call neobundle#end()
 
