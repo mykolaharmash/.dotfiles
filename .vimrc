@@ -121,3 +121,5 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 set diffopt+=vertical
 let g:jsx_ext_required = 0
+
+set term=xterm-256color
