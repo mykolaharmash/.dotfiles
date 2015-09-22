@@ -7,6 +7,10 @@ set NVM_PATH $HOME/.nvm
 set fish_theme clearance
 set fish_plugins git vi-mode
 
+# Locale
+set -x LC_ALL ru_RU.UTF-8
+set -x LC_CTYPE ru_RU.UTF-8
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
