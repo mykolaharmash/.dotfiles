@@ -1,9 +1,35 @@
+(require 'package)
 (package-initialize)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
 
- '(package-archives
-   (quote
-    (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "https://melpa.org/packages/"))))
+;; projectile
+(setq projectile-enable-caching t)
+(setq projectile-completion-system 'grizzl)
+
+;; grizzl
+(setq *grizzl-read-max-results* 7)
+
+;; neotree
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
+;; smartparens
+(smartparens-global-mode t)
+
+(global-set-key (kbd "C-v")
+		(lambda () (interactive) (next-line 5)))
+
+(global-set-key (kbd "M-v")
+		(lambda () (interactive) (previous-line 5)))
+
+;; highligh current line
+(global-hl-line-mode 1)
+
+(setq fci-rule-width 1)
+(setq fci-rule-color "#59606F")
+(setq fci-rule-column 120)
+(add-hook 'js-mode-hook 'fci-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -19,6 +45,7 @@
  '(line-spacing 0.2)
  '(menu-bar-mode nil)
  '(projectile-global-mode t)
+ '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(truncate-lines t))
 (custom-set-faces
