@@ -32,7 +32,6 @@
 (add-hook 'js-mode-hook 'fci-mode)
 
 (setq-default indent-tabs-mode nil)
-(setq-default require-final-newline t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
