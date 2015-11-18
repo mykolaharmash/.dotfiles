@@ -48,14 +48,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chriskempson/tomorrow-theme'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'terryma/vim-smooth-scroll'
-NeoBundle 'tacahiroy/ctrlp-funky'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'heavenshell/vim-jsdoc'
@@ -72,6 +70,9 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'SirVer/ultisnips'
 
 NeoBundle 'vim-scripts/nginx.vim'
+NeoBundle 'othree/yajs.vim'
+NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'Shougo/unite.vim'
 
 " Required:
 call neobundle#end()
@@ -84,23 +85,25 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------"
 
+call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
+call unite#filters#sorter_default#use(['sorter_rank'])
+
 let mapleader = ","
-let g:ctrlp_extensions = ['funky']
 let NERDTreeShowHidden = 1
 let g:vim_json_syntax_conceal = 0
 
 nmap <space> za
 
 map <Leader>n :NERDTreeToggle<CR>
-map <C-p> :CtrlP<CR>
-nnoremap <Leader>fu :CtrlPFunky<CR>
-colorscheme Tomorrow-Night-Bright
+map <C-p> :Unite file_rec<CR>
+colorscheme base16-solarized
 
 set background=dark
 
-" set wildignore+=*/.git/**
+set wildignore+=*/.git/**
 set wildignore+=*/node_modules/**
 set wildignore+=*/bower_components/**
+set wildignore+=*/.bower/**
 
 let g:indent_guides_guide_size = 1
 " let g:indent_guides_enable_on_vim_startup = 1
@@ -121,5 +124,3 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 set diffopt+=vertical
 let g:jsx_ext_required = 0
-
-set term=xterm-256color
