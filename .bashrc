@@ -27,6 +27,8 @@ export SCM_CHECK=true
 # Neovim config
 export XDG_CONFIG_HOME="$HOME/.config"
 
+export PATH="$PATH:/home/garmash/.bin"
+
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/xvzf/vcprompt
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt

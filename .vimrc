@@ -96,6 +96,7 @@ nmap <space> za
 
 map <Leader>n :NERDTreeToggle<CR>
 map <C-p> :Unite file_rec<CR>
+map <C-o> :Unite buffer<CR>
 colorscheme base16-solarized
 
 set background=dark
