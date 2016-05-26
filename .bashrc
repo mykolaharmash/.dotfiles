@@ -24,10 +24,10 @@ export TODO="t"
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
-# Neovim config
-export XDG_CONFIG_HOME="$HOME/.config"
-
 export PATH="$PATH:/home/garmash/.bin"
+
+#adding .rvm to PATH
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/xvzf/vcprompt
@@ -35,3 +35,6 @@ export PATH="$PATH:/home/garmash/.bin"
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
+
+export NVM_DIR="/Users/harmash/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
