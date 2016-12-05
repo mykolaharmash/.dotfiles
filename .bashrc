@@ -24,7 +24,7 @@ export TODO="t"
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
-export PATH="$PATH:/home/garmash/.bin"
+export PATH="$PATH:$HOME/.bin"
 
 #adding .rvm to PATH
 export PATH="$PATH:$HOME/.rvm/bin"
