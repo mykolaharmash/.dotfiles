@@ -26,9 +26,6 @@ export SCM_CHECK=true
 
 export PATH="$PATH:$HOME/.bin"
 
-#adding .rvm to PATH
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/xvzf/vcprompt
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
