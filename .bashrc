@@ -35,3 +35,11 @@ source $BASH_IT/bash_it.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Setup tab and window title functions for iterm2
+# iterm behaviour: until window name is explicitly set, it'll always track tab title.
+# So, to have different window and tab titles, iterm_window() must be called
+# Source: http://superuser.com/a/344397
+set_tab_name() {
+    echo -e "\033]0;$@\007"
+}
