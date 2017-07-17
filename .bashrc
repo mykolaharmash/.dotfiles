@@ -3,14 +3,10 @@
 export LANGUAGE="en_EN.UTF-8"
 
 # Path to the bash it configuration
-export BASH_IT="$HOME/.bash_it"
-
+export BASH_IT="$HOME/.bash_it" 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
 export BASH_IT_THEME='bakke'
-
-# Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -25,6 +21,7 @@ export TODO="t"
 export SCM_CHECK=true
 
 export PATH="$PATH:$HOME/.bin"
+
 
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/xvzf/vcprompt
@@ -43,3 +40,14 @@ export NVM_DIR="$HOME/.nvm"
 set_tab_name() {
     echo -e "\033]0;$@\007"
 }
+
+show_exit_code() {
+    local ex=$?
+
+    if [ $ex -ne 0 ]
+    then
+        echo -e "\033[0;31m$ex\033[0m"
+    fi
+}
+
+export PROMPT_COMMAND=show_exit_code
