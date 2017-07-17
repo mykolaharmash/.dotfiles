@@ -50,4 +50,4 @@ show_exit_code() {
     fi
 }
 
-export PROMPT_COMMAND=show_exit_code
+safe_append_prompt_command show_exit_code
