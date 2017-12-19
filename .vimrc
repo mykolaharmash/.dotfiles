@@ -48,9 +48,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'ayu-theme/ayu-vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'chriskempson/tomorrow-theme'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'terryma/vim-smooth-scroll'
@@ -97,9 +96,13 @@ nmap <space> za
 map <Leader>n :NERDTreeToggle<CR>
 map <C-p> :Unite file_rec<CR>
 map <C-o> :Unite buffer<CR>
-"colorscheme base16-solarized
 
-set background=dark
+set termguicolors
+set background=light
+let ayucolor='light'
+
+
+colorscheme ayu
 
 set wildignore+=*/.git/**
 set wildignore+=*/node_modules/**
@@ -108,6 +111,7 @@ set wildignore+=*/.bower/**
 
 let g:indent_guides_guide_size = 1
 " let g:indent_guides_enable_on_vim_startup = 1
+
 
 highlight ExtraWhitespace ctermbg=red
 highlight clear SignColumn
