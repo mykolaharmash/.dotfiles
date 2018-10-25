@@ -32,3 +32,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# No duplicates in history
+export HISTCONTROL=ignoredups:erasedups  
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+# Append history instead of overriding 
+shopt -s histappend
+# Append history on every command
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
